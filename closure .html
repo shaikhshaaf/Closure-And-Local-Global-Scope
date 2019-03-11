@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script >
+	
+function show () {
+	var a = "a is a local variable of outer function";
+	console.log(a);
+
+
+	function innerFun () {
+		var b = "b is a local varible of inner function";
+		 console.log(b);
+		 console.log(a);
+	}
+
+	innerFun();
+}
+  
+show();
+
+</script>
+</body>
+</html>
